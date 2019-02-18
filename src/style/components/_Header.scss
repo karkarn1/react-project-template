@@ -1,0 +1,18 @@
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: brown;
+  .link{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover{
+      color: yellow;
+    }
+  }
+  .active {
+    color: green;
+  }
+}

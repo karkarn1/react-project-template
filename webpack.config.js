@@ -7,7 +7,6 @@ const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = (env) => {
     // eslint-disable-next-line no-console
@@ -21,7 +20,7 @@ module.exports = (env) => {
         },
     });
     return {
-        mode: process.env.NODE_ENV,
+        mode: env,
         entry: ['@babel/polyfill', './src/app.js'],
         output: {
             path: path.join(__dirname, 'build'),

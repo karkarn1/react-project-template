@@ -1,0 +1,9 @@
+## IDE Files
+/.idea
+
+## Node Files
+/node_modules
+/yarn-error.log
+
+## Build
+/build
